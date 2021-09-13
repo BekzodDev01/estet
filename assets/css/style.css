@@ -1,0 +1,105 @@
+.headerPrimary{
+    height: 115vh; 
+    background-image: url('../../assets/images/header.png');
+
+    }
+body{
+    font-family: 'Gilroy';
+}
+ .services{
+     background-image: url('../../assets/images/servicesBg.png');
+ }
+.strategy{
+    background-image: url('../../assets/images/aboutBg.png');
+}
+.contact{
+    background-image: url('../../assets/images/contact.png');
+    background-repeat: no-repeat;
+}
+
+ .about{
+    background-image: url('../../assets/images/aboutBg.png');
+ }
+
+ .difference{
+     background-image: url('../../assets/images/dominant.png');
+ }
+
+.container{
+    padding: 0 40px 0 40px;
+    max-width: 1400px;
+}
+
+.right-side{
+    display: flex;
+}
+.nav-link{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    
+}
+.nav-link:visited{
+    border-color: #fff !important; 
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: #fff !important; 
+    }
+
+.active{
+    border-color: #fff
+}
+
+
+.nameInput input{
+   outline: none;
+   border-radius: 
+   opacity: .3;
+   border: 2px solid #777;
+   background-color:transparent;
+   border-radius: 30px; 
+ }
+ .uk-nav-parent-icon>.uk-parent>a::after {
+    display: none;
+}
+
+.uk-nav-parent-icon>.uk-parent>a {
+    color: #1c3143;
+    font-size: 18px;
+    font-weight: 600;
+}
+.uk-nav-parent-icon>.uk-parent>a:hover{
+    color: inherit !important;
+}
+.uk-nav-sub{
+    margin-left: 100px !important; 
+}
+.footer{
+    background-image: url('../../assets/images/footerBg.png');
+    background-color: #000;
+}
+.footerSeperator{
+    border-bottom: 2px solid 
+}
+.uk-nav-sub{
+    border-left: 4px solid #2222;
+    border-radius-top: 4px;
+    border-radius-left: 4px;
+}   
+.uk-nav-parent-icon>.uk-parent>{
+    border-bottom: 1px solid #2222;
+}
+.uk-nav-parent-icon>.uk-parent>a::before {
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 20px;
+    background-image: url('../images/+.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.uk-nav-parent-icon>.uk-parent.uk-open>a::before {
+    background-image: url('../images/-.svg');
+}

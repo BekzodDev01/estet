@@ -1,0 +1,1853 @@
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: currentColor;
+  /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-\[-10px\] {
+  top: -10px;
+}
+
+.top-\[-30px\] {
+  top: -30px;
+}
+
+.top-\[-40px\] {
+  top: -40px;
+}
+
+.left-\[20px\] {
+  left: 20px;
+}
+
+.left-\[-20px\] {
+  left: -20px;
+}
+
+.left-\[50px\] {
+  left: 50px;
+}
+
+.z-\[-2\] {
+  z-index: -2;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.mb-\[140px\] {
+  margin-bottom: 140px;
+}
+
+.mb-\[150px\] {
+  margin-bottom: 150px;
+}
+
+.mr-\[50px\] {
+  margin-right: 50px;
+}
+
+.ml-\[4px\] {
+  margin-left: 4px;
+}
+
+.mr-\[12px\] {
+  margin-right: 12px;
+}
+
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
+.mt-\[-50px\] {
+  margin-top: -50px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mb-\[120px\] {
+  margin-bottom: 120px;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mt-\[-40px\] {
+  margin-top: -40px;
+}
+
+.mt-\[12px\] {
+  margin-top: 12px;
+}
+
+.mt-\[-12px\] {
+  margin-top: -12px;
+}
+
+.mt-\[-20px\] {
+  margin-top: -20px;
+}
+
+.mt-\[-10px\] {
+  margin-top: -10px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
+.mt-\[-15px\] {
+  margin-top: -15px;
+}
+
+.mt-\[150px\] {
+  margin-top: 150px;
+}
+
+.mb-\[8px\] {
+  margin-bottom: 8px;
+}
+
+.mt-\[-80px\] {
+  margin-top: -80px;
+}
+
+.mt-\[-100px\] {
+  margin-top: -100px;
+}
+
+.mt-\[-120px\] {
+  margin-top: -120px;
+}
+
+.mt-\[32px\] {
+  margin-top: 32px;
+}
+
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
+.ml-\[100px\] {
+  margin-left: 100px;
+}
+
+.mb-\[-14\] {
+  margin-bottom: -14;
+}
+
+.mb-\[-24\] {
+  margin-bottom: -24;
+}
+
+.mt-\[-24\] {
+  margin-top: -24;
+}
+
+.mt-\[-24px\] {
+  margin-top: -24px;
+}
+
+.mt-\[-14px\] {
+  margin-top: -14px;
+}
+
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[60px\] {
+  margin-left: 60px;
+}
+
+.ml-\[75px\] {
+  margin-left: 75px;
+}
+
+.ml-\[80px\] {
+  margin-left: 80px;
+}
+
+.ml-\[78px\] {
+  margin-left: 78px;
+}
+
+.ml-\[70px\] {
+  margin-left: 70px;
+}
+
+.mr-\[20px\] {
+  margin-right: 20px;
+}
+
+.ml-\[40px\] {
+  margin-left: 40px;
+}
+
+.ml-\[58px\] {
+  margin-left: 58px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[16px\] {
+  height: 16px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[752px\] {
+  height: 752px;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[254px\] {
+  height: 254px;
+}
+
+.h-\[394px\] {
+  height: 394px;
+}
+
+.h-\[244px\] {
+  height: 244px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[248px\] {
+  height: 248px;
+}
+
+.h-\[294px\] {
+  height: 294px;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[200vh\] {
+  height: 200vh;
+}
+
+.h-\[150vh\] {
+  height: 150vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.w-\[16px\] {
+  width: 16px;
+}
+
+.w-\[862px\] {
+  width: 862px;
+}
+
+.w-\[160px\] {
+  width: 160px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[503px\] {
+  width: 503px;
+}
+
+.w-\[274px\] {
+  width: 274px;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[462px\] {
+  width: 462px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[254px\] {
+  width: 254px;
+}
+
+.w-\[218px\] {
+  width: 218px;
+}
+
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-\[610px\] {
+  width: 610px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.translate-x-\[-20px\] {
+  --tw-translate-x: -20px;
+  transform: var(--tw-transform);
+}
+
+.translate-y-\[-20px\] {
+  --tw-translate-y: -20px;
+  transform: var(--tw-transform);
+}
+
+.translate-y-\[-50px\] {
+  --tw-translate-y: -50px;
+  transform: var(--tw-transform);
+}
+
+.transform {
+  transform: var(--tw-transform);
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-x-\[20px\] {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.gap-x-\[200px\] {
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[12px\] {
+  border-radius: 12px;
+}
+
+.border-\[30px\] {
+  border-width: 30px;
+}
+
+.border-\[10px\] {
+  border-width: 10px;
+}
+
+.border-\[2px\] {
+  border-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-\[2px\] {
+  border-bottom-width: 2px;
+}
+
+.border-\[\#ffff\] {
+  border-color: #ffff;
+}
+
+.border-\[\#fff\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+}
+
+.border-opacity-\[\.12\] {
+  --tw-border-opacity: .12;
+}
+
+.bg-\[\#3175D4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 117, 212, var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.bg-\[\#777\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(119, 119, 119, var(--tw-bg-opacity));
+}
+
+.bg-\[\#333\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(51, 51, 51, var(--tw-bg-opacity));
+}
+
+.bg-opacity-\[\.12\] {
+  --tw-bg-opacity: .12;
+}
+
+.bg-opacity-\[\.72\] {
+  --tw-bg-opacity: .72;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.p-\[50px\] {
+  padding: 50px;
+}
+
+.p-\[72px\] {
+  padding: 72px;
+}
+
+.p-\[20px\] {
+  padding: 20px;
+}
+
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.py-\[140px\] {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-\[72px\] {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.px-\[72px\] {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.px-\[62px\] {
+  padding-left: 62px;
+  padding-right: 62px;
+}
+
+.py-\[70px\] {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.px-\[42px\] {
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.py-\[52px\] {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.py-44 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.py-\[50pxs\] {
+  padding-top: 50pxs;
+  padding-bottom: 50pxs;
+}
+
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pt-\[12px\] {
+  padding-top: 12px;
+}
+
+.pb-\[12px\] {
+  padding-bottom: 12px;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
+.pl-\[24px\] {
+  padding-left: 24px;
+}
+
+.pr-\[24px\] {
+  padding-right: 24px;
+}
+
+.pt-\[18px\] {
+  padding-top: 18px;
+}
+
+.pb-\[18px\] {
+  padding-bottom: 18px;
+}
+
+.pl-\[40px\] {
+  padding-left: 40px;
+}
+
+.pr-\[40px\] {
+  padding-right: 40px;
+}
+
+.pt-\[-30px\] {
+  padding-top: -30px;
+}
+
+.pt-\[-50px\] {
+  padding-top: -50px;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
+.pt-\[72px\] {
+  padding-top: 72px;
+}
+
+.pb-\[72px\] {
+  padding-bottom: 72px;
+}
+
+.pt-\[120px\] {
+  padding-top: 120px;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
+
+.pt-\[140px\] {
+  padding-top: 140px;
+}
+
+.pb-\[140px\] {
+  padding-bottom: 140px;
+}
+
+.pl-\[20px\] {
+  padding-left: 20px;
+}
+
+.pr-\[20px\] {
+  padding-right: 20px;
+}
+
+.pr-\[50px\] {
+  padding-right: 50px;
+}
+
+.pr-\[150px\] {
+  padding-right: 150px;
+}
+
+.pl-\[25px\] {
+  padding-left: 25px;
+}
+
+.pb-\[70px\] {
+  padding-bottom: 70px;
+}
+
+.pr-\[60px\] {
+  padding-right: 60px;
+}
+
+.pr-\[160px\] {
+  padding-right: 160px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
+.pr-\[30px\] {
+  padding-right: 30px;
+}
+
+.pr-\[130px\] {
+  padding-right: 130px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[80px\] {
+  font-size: 80px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[45px\] {
+  font-size: 45px;
+}
+
+.text-\[55px\] {
+  font-size: 55px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-\[120px\] {
+  line-height: 120px;
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-\[\#222222\] {
+  --tw-text-opacity: 1;
+  color: rgba(34, 34, 34, var(--tw-text-opacity));
+}
+
+.text-\[\#000\] {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.text-\[\#333\] {
+  --tw-text-opacity: 1;
+  color: rgba(51, 51, 51, var(--tw-text-opacity));
+}
+
+.text-\[\#2222\] {
+  color: #2222;
+}
+
+.text-\[\#7777\] {
+  color: #7777;
+}
+
+.text-\[\#0000\] {
+  color: #0000;
+}
+
+.text-opacity-\[\.72\] {
+  --tw-text-opacity: .72;
+}
+
+.text-opacity-\[\.22\] {
+  --tw-text-opacity: .22;
+}
+
+.text-opacity-20 {
+  --tw-text-opacity: 0.2;
+}
+
+.text-opacity-\[0\.72\] {
+  --tw-text-opacity: 0.72;
+}
+
+.text-opacity-\[\.42\] {
+  --tw-text-opacity: .42;
+}
+
+.text-opacity-\[\.56\] {
+  --tw-text-opacity: .56;
+}
+
+.opacity-\[\.72\] {
+  opacity: .72;
+}
+
+.ring-offset-\[-2px\] {
+  --tw-ring-offset-width: -2px;
+}
+
+.ring-offset-\[20px\] {
+  --tw-ring-offset-width: 20px;
+}
+
+.blur-\[40px\] {
+  --tw-blur: blur(40px);
+  filter: var(--tw-filter);
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Regular.eot');
+
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-ExtraboldItalic.eot');
+
+  src: local('Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
+        url('Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-ExtraboldItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-ExtraboldItalic.woff') format('woff'),
+        url('Gilroy-ExtraboldItalic.ttf') format('truetype');
+
+  font-weight: 800;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Bold.eot');
+
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Bold.woff') format('woff'),
+        url('Gilroy-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Black.eot');
+
+  src: local('Gilroy Black'), local('Gilroy-Black'),
+        url('Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Black.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Black.woff') format('woff'),
+        url('Gilroy-Black.ttf') format('truetype');
+
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Light.eot');
+
+  src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Light.woff') format('woff'),
+        url('Gilroy-Light.ttf') format('truetype');
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Semibold.eot');
+
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Semibold.woff') format('woff'),
+        url('Gilroy-Semibold.ttf') format('truetype');
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Medium.eot');
+
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Medium.woff') format('woff'),
+        url('Gilroy-Medium.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-MediumItalic.eot');
+
+  src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+        url('Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-MediumItalic.woff') format('woff'),
+        url('Gilroy-MediumItalic.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-BlackItalic.eot');
+
+  src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
+        url('Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-BlackItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-BlackItalic.woff') format('woff'),
+        url('Gilroy-BlackItalic.ttf') format('truetype');
+
+  font-weight: 900;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-UltraLight.eot');
+
+  src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
+        url('Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-UltraLight.woff') format('woff'),
+        url('Gilroy-UltraLight.ttf') format('truetype');
+
+  font-weight: 200;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-RegularItalic.eot');
+
+  src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+        url('Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-RegularItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-RegularItalic.woff') format('woff'),
+        url('Gilroy-RegularItalic.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-SemiboldItalic.eot');
+
+  src: local('Gilroy Semibold Italic'), local('Gilroy-SemiboldItalic'),
+        url('Gilroy-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-SemiboldItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-SemiboldItalic.woff') format('woff'),
+        url('Gilroy-SemiboldItalic.ttf') format('truetype');
+
+  font-weight: 600;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-HeavyItalic.eot');
+
+  src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
+        url('Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-HeavyItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-HeavyItalic.woff') format('woff'),
+        url('Gilroy-HeavyItalic.ttf') format('truetype');
+
+  font-weight: 900;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Extrabold.eot');
+
+  src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Extrabold.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Extrabold.woff') format('woff'),
+        url('Gilroy-Extrabold.ttf') format('truetype');
+
+  font-weight: 800;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-BoldItalic.eot');
+
+  src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+        url('Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-BoldItalic.woff') format('woff'),
+        url('Gilroy-BoldItalic.ttf') format('truetype');
+
+  font-weight: bold;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-UltraLightItalic.eot');
+
+  src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
+        url('Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-UltraLightItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-UltraLightItalic.woff') format('woff'),
+        url('Gilroy-UltraLightItalic.ttf') format('truetype');
+
+  font-weight: 200;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-LightItalic.eot');
+
+  src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-LightItalic.woff') format('woff'),
+        url('Gilroy-LightItalic.ttf') format('truetype');
+
+  font-weight: 300;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Heavy.eot');
+
+  src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Heavy.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Heavy.woff') format('woff'),
+        url('Gilroy-Heavy.ttf') format('truetype');
+
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-Thin.eot');
+
+  src: local('Gilroy Thin'), local('Gilroy-Thin'),
+        url('Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-Thin.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-Thin.woff') format('woff'),
+        url('Gilroy-Thin.ttf') format('truetype');
+
+  font-weight: 100;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('Gilroy-ThinItalic.eot');
+
+  src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
+        url('Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/gilroy/Gilroy-ThinItalic.woff2') format('woff2'),
+        url('./assets/fonts/gilroy/Gilroy-ThinItalic.woff') format('woff'),
+        url('Gilroy-ThinItalic.ttf') format('truetype');
+
+  font-weight: 100;
+
+  font-style: italic;
+}
+
+.hover\:border-none:hover {
+  border-style: none;
+}
+
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
+
+.hover\:bg-\[\#3175D4\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 117, 212, var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#2222\]:hover {
+  color: #2222;
+}
+
+.hover\:text-\[\#000\]:hover {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
